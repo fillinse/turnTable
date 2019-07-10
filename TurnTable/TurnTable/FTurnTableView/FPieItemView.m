@@ -35,28 +35,6 @@
 {
     //设置头像
     self.headerImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:url]]];
-    /// *******************************************************************
-    /// *******************************************************************
-    /// *******************************************************************
-
-    //这里特别需要注意 这里的画法，是以自身中心为原点，以自身宽度(本身是正方形)为半径，画一段圆弧，然后填充颜色，就成了一个扇形。注意 圆弧的线的宽度是
-    CGFloat R = self.frame.size.width;
-    CGFloat r = R/3.0;
-    CGFloat longLine = R - r/2 - 10;
-    CGFloat angle = (_beginAngle + _endAngle)/2;
-    CGFloat width = cos(angle) * longLine;
-    CGFloat height = sin(-angle) * longLine;
-    
-    CGFloat x = width + R/2 - r/2;
-    CGFloat y = R/2 - height - r/2;
-    self.headerImageView.frame = CGRectMake(x, y, r, r);
-    self.headerImageView.layer.cornerRadius = r/2;
-    self.headerImageView.clipsToBounds = YES;
-    _shapeLayer = [CAShapeLayer layer];
-    [_shapeLayer addSublayer:self.headerImageView.layer];
-    /// *******************************************************************
-    /// *******************************************************************
-    /// *******************************************************************
 }
 
 - (void)configBaseLayer{
@@ -118,7 +96,21 @@
     UIBezierPath *path2 = [UIBezierPath bezierPath];
     [path2 addArcWithCenter:CGPointMake(self.frame.size.width/2, self.frame.size.height/2) radius:longLine startAngle:start endAngle:end clockwise: _lastStartAngle <= _beginAngle];
     pathAnimation.path = path2.CGPath;
-    [_headerImageView.layer addAnimation:pathAnimation forKey:@"header"];
+    
+    //头像始终朝着圆心
+    CGFloat angle = (_beginAngle + _endAngle)/2;
+    _headerImageView.transform = CGAffineTransformMakeRotation(angle - M_PI_2 * 3);
+    CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.fromValue = @((_lastEndAngle + _lastStartAngle)/2 - M_PI_2 * 3);
+    rotationAnimation.toValue = @(angle - M_PI_2 * 3);
+    rotationAnimation.removedOnCompletion = NO;
+    rotationAnimation.delegate = self;
+    rotationAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    //组合动画
+    CAAnimationGroup *group = [[CAAnimationGroup alloc] init];
+    group.duration = _animationDuration;
+    group.animations = @[pathAnimation,rotationAnimation];
+    [_headerImageView.layer addAnimation:group forKey:@"header"];
 }
 
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
@@ -144,6 +136,21 @@
     if (!_headerImageView) {
         _headerImageView = [[UIImageView alloc] init];
         _headerImageView.backgroundColor = [UIColor redColor];
+        //这里特别需要注意 这里的画法，是以自身中心为原点，以自身宽度(本身是正方形)为半径，画一段圆弧，然后填充颜色，就成了一个扇形。注意 圆弧的线的宽度是
+        CGFloat R = self.frame.size.width;
+        CGFloat r = R/3.0;
+        CGFloat longLine = R - r/2 - 10;
+        CGFloat angle = (_beginAngle + _endAngle)/2;
+        CGFloat width = cos(angle) * longLine;
+        CGFloat height = sin(-angle) * longLine;
+        
+        CGFloat x = width + R/2 - r/2;
+        CGFloat y = R/2 - height - r/2;
+        self.headerImageView.frame = CGRectMake(x, y, r, r);
+        self.headerImageView.layer.cornerRadius = r/2;
+        self.headerImageView.clipsToBounds = YES;
+        //让头像全部面朝圆心
+        [_shapeLayer addSublayer:self.headerImageView.layer];
     }
     return _headerImageView;
 }
