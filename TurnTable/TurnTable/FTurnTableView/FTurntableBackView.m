@@ -45,7 +45,7 @@
     _countPreAngeleArr = [NSMutableArray array];
     for (NSInteger i = 0; i<_angleArr.count; i++) {
         if (i==0) {
-            //计算起始位置 每次最上面的中心角度为 M_PI_2 然后减去本身角度的一般
+            //计算起始位置 每次最上面的中心角度为 -M_PI_2
             CGFloat angle = - M_PI_2;
             [_countPreAngeleArr addObject:[NSNumber numberWithFloat:angle]];
         }
@@ -59,6 +59,8 @@
 -(void)showAnimation{
     if (_valueArr.count>0) {
         [self countAllAngleDataArr];
+        //一开始我也想在一个view上操作多个layer，但是本人才疏学浅，这条路没走通，所以用的是一个view控制一个layer
+        //从层级上看，我这边是每一次画图都是用了不少的view，然后每次布局都是重叠，在第三轮的时候就把第一轮的移出，就能稍微减少一些负担
         if (!_subLayersArray) {
             _subLayersArray = [NSMutableArray array];
         }else{
