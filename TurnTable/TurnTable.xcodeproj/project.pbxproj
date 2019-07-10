@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9312DBEB22CEDBB300DCC75D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312DBEA22CEDBB300DCC75D /* AppDelegate.m */; };
+		9312DBEE22CEDBB300DCC75D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312DBED22CEDBB300DCC75D /* ViewController.m */; };
+		9312DBF122CEDBB300DCC75D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9312DBEF22CEDBB300DCC75D /* Main.storyboard */; };
+		9312DBF322CEDBB500DCC75D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9312DBF222CEDBB500DCC75D /* Assets.xcassets */; };
+		9312DBF622CEDBB500DCC75D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9312DBF422CEDBB500DCC75D /* LaunchScreen.storyboard */; };
+		9312DBF922CEDBB500DCC75D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312DBF822CEDBB500DCC75D /* main.m */; };
+		9312DC0322CEDBB500DCC75D /* TurnTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312DC0222CEDBB500DCC75D /* TurnTableTests.m */; };
+		9312DC0E22CEDBB500DCC75D /* TurnTableUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312DC0D22CEDBB500DCC75D /* TurnTableUITests.m */; };
+		9312DC1E22CEDC0400DCC75D /* FPieItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312DC1D22CEDC0400DCC75D /* FPieItemView.m */; };
+		9312DC2122CEE1D200DCC75D /* FTurntableBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312DC2022CEE1D200DCC75D /* FTurntableBackView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9312DBFF22CEDBB500DCC75D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9312DBDE22CEDBB300DCC75D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9312DBE522CEDBB300DCC75D;
+			remoteInfo = TurnTable;
+		};
+		9312DC0A22CEDBB500DCC75D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9312DBDE22CEDBB300DCC75D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9312DBE522CEDBB300DCC75D;
+			remoteInfo = TurnTable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9312DBE622CEDBB300DCC75D /* TurnTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurnTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9312DBE922CEDBB300DCC75D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9312DBEA22CEDBB300DCC75D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9312DBEC22CEDBB300DCC75D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9312DBED22CEDBB300DCC75D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9312DBF022CEDBB300DCC75D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9312DBF222CEDBB500DCC75D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9312DBF522CEDBB500DCC75D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9312DBF722CEDBB500DCC75D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9312DBF822CEDBB500DCC75D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9312DBFE22CEDBB500DCC75D /* TurnTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurnTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9312DC0222CEDBB500DCC75D /* TurnTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurnTableTests.m; sourceTree = "<group>"; };
+		9312DC0422CEDBB500DCC75D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9312DC0922CEDBB500DCC75D /* TurnTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurnTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9312DC0D22CEDBB500DCC75D /* TurnTableUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurnTableUITests.m; sourceTree = "<group>"; };
+		9312DC0F22CEDBB500DCC75D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9312DC1C22CEDC0400DCC75D /* FPieItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPieItemView.h; sourceTree = "<group>"; };
+		9312DC1D22CEDC0400DCC75D /* FPieItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPieItemView.m; sourceTree = "<group>"; };
+		9312DC1F22CEE1D200DCC75D /* FTurntableBackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTurntableBackView.h; sourceTree = "<group>"; };
+		9312DC2022CEE1D200DCC75D /* FTurntableBackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTurntableBackView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9312DBE322CEDBB300DCC75D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9312DBFB22CEDBB500DCC75D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9312DC0622CEDBB500DCC75D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9312DBDD22CEDBB300DCC75D = {
+			isa = PBXGroup;
+			children = (
+				9312DBE822CEDBB300DCC75D /* TurnTable */,
+				9312DC0122CEDBB500DCC75D /* TurnTableTests */,
+				9312DC0C22CEDBB500DCC75D /* TurnTableUITests */,
+				9312DBE722CEDBB300DCC75D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9312DBE722CEDBB300DCC75D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9312DBE622CEDBB300DCC75D /* TurnTable.app */,
+				9312DBFE22CEDBB500DCC75D /* TurnTableTests.xctest */,
+				9312DC0922CEDBB500DCC75D /* TurnTableUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9312DBE822CEDBB300DCC75D /* TurnTable */ = {
+			isa = PBXGroup;
+			children = (
+				9312DC1B22CEDBC300DCC75D /* FTurnTableView */,
+				9312DBE922CEDBB300DCC75D /* AppDelegate.h */,
+				9312DBEA22CEDBB300DCC75D /* AppDelegate.m */,
+				9312DBEC22CEDBB300DCC75D /* ViewController.h */,
+				9312DBED22CEDBB300DCC75D /* ViewController.m */,
+				9312DBEF22CEDBB300DCC75D /* Main.storyboard */,
+				9312DBF222CEDBB500DCC75D /* Assets.xcassets */,
+				9312DBF422CEDBB500DCC75D /* LaunchScreen.storyboard */,
+				9312DBF722CEDBB500DCC75D /* Info.plist */,
+				9312DBF822CEDBB500DCC75D /* main.m */,
+			);
+			path = TurnTable;
+			sourceTree = "<group>";
+		};
+		9312DC0122CEDBB500DCC75D /* TurnTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				9312DC0222CEDBB500DCC75D /* TurnTableTests.m */,
+				9312DC0422CEDBB500DCC75D /* Info.plist */,
+			);
+			path = TurnTableTests;
+			sourceTree = "<group>";
+		};
+		9312DC0C22CEDBB500DCC75D /* TurnTableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9312DC0D22CEDBB500DCC75D /* TurnTableUITests.m */,
+				9312DC0F22CEDBB500DCC75D /* Info.plist */,
+			);
+			path = TurnTableUITests;
+			sourceTree = "<group>";
+		};
+		9312DC1B22CEDBC300DCC75D /* FTurnTableView */ = {
+			isa = PBXGroup;
+			children = (
+				9312DC1C22CEDC0400DCC75D /* FPieItemView.h */,
+				9312DC1D22CEDC0400DCC75D /* FPieItemView.m */,
+				9312DC1F22CEE1D200DCC75D /* FTurntableBackView.h */,
+				9312DC2022CEE1D200DCC75D /* FTurntableBackView.m */,
+			);
+			path = FTurnTableView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9312DBE522CEDBB300DCC75D /* TurnTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9312DC1222CEDBB500DCC75D /* Build configuration list for PBXNativeTarget "TurnTable" */;
+			buildPhases = (
+				9312DBE222CEDBB300DCC75D /* Sources */,
+				9312DBE322CEDBB300DCC75D /* Frameworks */,
+				9312DBE422CEDBB300DCC75D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TurnTable;
+			productName = TurnTable;
+			productReference = 9312DBE622CEDBB300DCC75D /* TurnTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9312DBFD22CEDBB500DCC75D /* TurnTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9312DC1522CEDBB500DCC75D /* Build configuration list for PBXNativeTarget "TurnTableTests" */;
+			buildPhases = (
+				9312DBFA22CEDBB500DCC75D /* Sources */,
+				9312DBFB22CEDBB500DCC75D /* Frameworks */,
+				9312DBFC22CEDBB500DCC75D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9312DC0022CEDBB500DCC75D /* PBXTargetDependency */,
+			);
+			name = TurnTableTests;
+			productName = TurnTableTests;
+			productReference = 9312DBFE22CEDBB500DCC75D /* TurnTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9312DC0822CEDBB500DCC75D /* TurnTableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9312DC1822CEDBB500DCC75D /* Build configuration list for PBXNativeTarget "TurnTableUITests" */;
+			buildPhases = (
+				9312DC0522CEDBB500DCC75D /* Sources */,
+				9312DC0622CEDBB500DCC75D /* Frameworks */,
+				9312DC0722CEDBB500DCC75D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9312DC0B22CEDBB500DCC75D /* PBXTargetDependency */,
+			);
+			name = TurnTableUITests;
+			productName = TurnTableUITests;
+			productReference = 9312DC0922CEDBB500DCC75D /* TurnTableUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9312DBDE22CEDBB300DCC75D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = fillinse;
+				TargetAttributes = {
+					9312DBE522CEDBB300DCC75D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9312DBFD22CEDBB500DCC75D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9312DBE522CEDBB300DCC75D;
+					};
+					9312DC0822CEDBB500DCC75D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9312DBE522CEDBB300DCC75D;
+					};
+				};
+			};
+			buildConfigurationList = 9312DBE122CEDBB300DCC75D /* Build configuration list for PBXProject "TurnTable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9312DBDD22CEDBB300DCC75D;
+			productRefGroup = 9312DBE722CEDBB300DCC75D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9312DBE522CEDBB300DCC75D /* TurnTable */,
+				9312DBFD22CEDBB500DCC75D /* TurnTableTests */,
+				9312DC0822CEDBB500DCC75D /* TurnTableUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9312DBE422CEDBB300DCC75D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9312DBF622CEDBB500DCC75D /* LaunchScreen.storyboard in Resources */,
+				9312DBF322CEDBB500DCC75D /* Assets.xcassets in Resources */,
+				9312DBF122CEDBB300DCC75D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9312DBFC22CEDBB500DCC75D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9312DC0722CEDBB500DCC75D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9312DBE222CEDBB300DCC75D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9312DBEE22CEDBB300DCC75D /* ViewController.m in Sources */,
+				9312DBF922CEDBB500DCC75D /* main.m in Sources */,
+				9312DC2122CEE1D200DCC75D /* FTurntableBackView.m in Sources */,
+				9312DBEB22CEDBB300DCC75D /* AppDelegate.m in Sources */,
+				9312DC1E22CEDC0400DCC75D /* FPieItemView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9312DBFA22CEDBB500DCC75D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9312DC0322CEDBB500DCC75D /* TurnTableTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9312DC0522CEDBB500DCC75D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9312DC0E22CEDBB500DCC75D /* TurnTableUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9312DC0022CEDBB500DCC75D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9312DBE522CEDBB300DCC75D /* TurnTable */;
+			targetProxy = 9312DBFF22CEDBB500DCC75D /* PBXContainerItemProxy */;
+		};
+		9312DC0B22CEDBB500DCC75D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9312DBE522CEDBB300DCC75D /* TurnTable */;
+			targetProxy = 9312DC0A22CEDBB500DCC75D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9312DBEF22CEDBB300DCC75D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9312DBF022CEDBB300DCC75D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9312DBF422CEDBB500DCC75D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9312DBF522CEDBB500DCC75D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9312DC1022CEDBB500DCC75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9312DC1122CEDBB500DCC75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9312DC1322CEDBB500DCC75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LF.TurnTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9312DC1422CEDBB500DCC75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LF.TurnTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9312DC1622CEDBB500DCC75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LF.TurnTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurnTable.app/TurnTable";
+			};
+			name = Debug;
+		};
+		9312DC1722CEDBB500DCC75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LF.TurnTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurnTable.app/TurnTable";
+			};
+			name = Release;
+		};
+		9312DC1922CEDBB500DCC75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnTableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LF.TurnTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TurnTable;
+			};
+			name = Debug;
+		};
+		9312DC1A22CEDBB500DCC75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnTableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LF.TurnTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TurnTable;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9312DBE122CEDBB300DCC75D /* Build configuration list for PBXProject "TurnTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9312DC1022CEDBB500DCC75D /* Debug */,
+				9312DC1122CEDBB500DCC75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9312DC1222CEDBB500DCC75D /* Build configuration list for PBXNativeTarget "TurnTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9312DC1322CEDBB500DCC75D /* Debug */,
+				9312DC1422CEDBB500DCC75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9312DC1522CEDBB500DCC75D /* Build configuration list for PBXNativeTarget "TurnTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9312DC1622CEDBB500DCC75D /* Debug */,
+				9312DC1722CEDBB500DCC75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9312DC1822CEDBB500DCC75D /* Build configuration list for PBXNativeTarget "TurnTableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9312DC1922CEDBB500DCC75D /* Debug */,
+				9312DC1A22CEDBB500DCC75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9312DBDE22CEDBB300DCC75D /* Project object */;
+}
